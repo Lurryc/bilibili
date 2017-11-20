@@ -1,0 +1,67 @@
+/*该文件是设置所有CSS的初始文件*/
+*{
+	box-sizing: border-box;
+}
+p,pre,ul,li,dd,dt,h1,h2,h3,h4,h5,h6{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+img{
+	vertical-align:bottom;
+}
+body{
+	margin:0;
+	font:12px 'Helvetica Neue',Helvetica,Arial,'Microsoft Yahei','Hiragino Sans GB','Heiti SC','WenQuanYi Micro Hei',sans-serif;
+}
+input{
+	outline:none;
+}
+a{
+	color:#222;
+	text-decoration:none;
+	transition:color .4s;
+}
+a:hover{
+	color:#00a1d6;
+}
+.over:before{
+	content:"";
+	display:table;
+}
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.main{
+	width:980px;
+	margin:0 auto;
+}
+.left{
+	float:left
+}
+.right{
+    float:right
+}
+.show{
+	display:block;
+}
+a.lightColor{
+    color: #6d757a;
+}
+a.lightColor:hover{
+	color: #00a1d6;
+}
+.radius{
+	border-radius:6px;
+}
+.relative{
+	position: relative;
+}
+.fill{
+	width:100%;
+}
+.hide{
+	display: none;
+}

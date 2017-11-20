@@ -1,0 +1,222 @@
+/*通用部分*/
+a.pink{
+    color: #00a1d6;;
+}
+a.pink:hover{
+    color: #f25d8e;
+}
+/*banner部分*/
+.banner{
+    background: #00a0d8;
+    height: 86px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.line-title{
+    width:980px;
+    height:28px;
+    margin:0 auto;
+    margin-bottom: 28px;
+    text-align: center;
+    border-bottom:1px solid #ddd;
+}
+.line-title>.tit{
+    display: inline-block;
+    font-size: 40px;
+    width: 120px;
+    text-align: center;
+    background-color: #ffffff;
+}
+/*主体部分*/
+.login-container{
+    position: relative;
+    width:980px;
+    height: 325px;
+    margin:0 auto;
+    color: #717171;
+    padding-right: 35px;
+}
+/*左侧*/
+.qrcode-login{
+    width: 480px;
+}
+.qrcode-icon{
+    position: relative;
+    padding-top: 72px;
+}
+.qrcode-icon>.phone-icon{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 160px;
+    top: 10px;
+    background: url("../img/index/app-download.png");
+}
+.qrcode-box{
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+}
+.qrcode-box>.qrcode-tips{
+    position: absolute;
+    width: 175px;
+    height: 190px;
+    left: 50%;
+    margin-left: -88px;
+    top: 22px;
+    background: #fff url("../img/login/qr-tips.png");
+    opacity: 0;
+    transition: all .5s;
+}
+.qrcode-box>.qrcode-tips:hover{
+    opacity:1;
+}
+.qrcode-footer{
+    text-align: center;
+    width: 480px;
+    height: 155px;
+    background: url("../img/login/qr-footer.png");
+}
+.qrcode-footer>.qrcode-text{
+    padding-top: 20px;
+    color: #222;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.qrcode-footer>.app-link{
+    font-size: 14px;
+}
+/*中间线*/
+.login-line{
+    position: absolute;
+    top: 28px;
+    height: 300px;
+    margin: 0 auto 0 50%;
+    border-right: 1px solid #ddd;
+}
+/*右侧*/
+.form-login{
+    padding-top: 10px;
+    width: 388px;
+}
+.form-login>.item input{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #aaa;
+    font-size: 14px;
+    padding: 10px;
+    height: 40px;
+}
+.form-login>.item input.err{
+    border-color: #f66495;
+}
+.form-login>.item .res-text{
+    color: #f66495;
+    margin: 6px 0;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+.form-login span.res-icon{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/login/icons.png");
+}
+.form-login span.res-icon.err{
+    display: block;
+    background-position: -37px -38px;
+}
+.yzm input{
+    width: 160px;
+    margin-right: 40px;
+}
+.yzm>i.yzm_res{
+    display: inline-block;
+    position: absolute;
+    top:18%;
+    left:32%;
+    background:url("../img/login/sprite.png") 30px 1px;
+    height: 26px;
+    width: 26px;
+}
+.yzm>i.yzm_res.success{
+    background-position: 0 -304px;
+}
+.yzm>i.yzm_res.err{
+    background-position: 0 -414px;
+}
+.yzm canvas{
+    vertical-align: bottom;
+    background-color: #dddddd;
+}
+.yzm>i.refresh{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/public/refresh.png") ;
+    background-size: 40px;
+    vertical-align: bottom;
+    cursor: pointer;
+    transition:.5s;
+    margin-left: 10px;
+}
+.form-login .remember{
+    margin: 10px 0;
+    color: #717171;
+}
+.form-login .remember>label>span{
+    color: #bbb;
+    margin-left: 10px;
+}
+.form-login .btn-box>.btn{
+    display: inline-block;
+    height: 38px;
+    border-radius: 2px;
+    width: 184px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+.form-login .btn-box>.btn-login:hover{
+    background: #00bee7;
+}
+.form-login .btn-box>.btn-login{
+    border: 1px solid #0381aa;
+    color: #fff;
+    background-color: #00a7de;
+}
+.form-login .btn-box>.btn-reg:hover{
+    background: #f7f7f7;
+}
+.form-login .btn-box>.btn-reg{
+    border: 1px solid #ccc;
+    color: #555;
+}
+.other-way{
+    padding: 12px 0;
+}
+.other-way>.btn:before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+    background: url("../img/login/oth_login_icon.png");
+    vertical-align: middle;
+}
+.other-way>.btn.qq{
+    margin-left: 20px;
+}
+.other-way>.btn.qq:before{
+    background-position: 0 -41px;;
+}
+/*底部部分*/
+.z-footer-container{
+    margin-top: 70px;
+}

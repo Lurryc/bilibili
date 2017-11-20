@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+	<link rel="icon" href="data:image/x-icon;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A1qEAANahAADWoQAG1qEAb9ahAMvWoQD01qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD01qEAy9ahAG/WoQAG1qEAANahAADWoQAA1qEAG9ahAM/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahANDWoQAb1qEAANahAAfWoQDQ1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahANHWoQAH1qEAbtahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAG7WoQDH1qEA/9ahAP/WoQD/1qEAtdahABjWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahABvWoQC11qEA/9ahAP/WoQD/1qEAx9ahAPnWoQD/1qEA/9ahAP/WoQAZ1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahABjWoQD/1qEA/9ahAP/WoQDz1qEA/9ahAP/WoQD/1qEA/9ahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEAANahAADWoQAA1qEAANahAErWoQDn1qEA5NahAErWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAErWoQDn1qEA5NahAErWoQAA1qEAANahAADWoQAA1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQAA1qEAANahAADWoQAA1qEA5tahAP/WoQD/1qEA59ahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEA5tahAP/WoQD/1qEA59ahAADWoQAA1qEAANahAADWoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAADWoQAA1qEAANahAADWoQD/1qEA/9ahAP/WoQD/1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQD/1qEA/9ahAP/WoQD/1qEAANahAADWoQAA1qEAANahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEAANahAADWoQAA1qEAANahAP/WoQD/1qEA/9ahAP/WoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAP/WoQD/1qEA/9ahAP/WoQAA1qEAANahAADWoQAA1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQAA1qEAANahAADWoQAA1qEA5tahAP/WoQD/1qEA5tahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEA5tahAP/WoQD/1qEA5tahAADWoQAA1qEAANahAADWoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAADWoQAA1qEAANahAADWoQBJ1qEA5tahAObWoQBJ1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQBJ1qEA5tahAObWoQBJ1qEAANahAADWoQAA1qEAANahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQD/1qEA/9ahAP/WoQD/1qEA+dahAP/WoQD/1qEA/9ahABnWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAGdahAP/WoQD/1qEA/9ahAPjWoQDH1qEA/9ahAP/WoQD/1qEAttahABnWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahABnWoQC21qEA/9ahAP/WoQD/1qEAx9ahAG3WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQBt1qEABtahAM/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA0NahAAfWoQAA1qEAG9ahAM/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAM/WoQAb1qEAANahAADWoQAA1qEABtahAG7WoQDH1qEA89ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA/9ahAP/WoQD/1qEA89ahAMfWoQBu1qEABtahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEADtahAMXWoQD/1qEA/9ahAP/WoQD/1qEAxdahAA/WoQAA1qEAANahAADWoQAA1qEADtahAMXWoQD/1qEA/9ahAP/WoQD/1qEAxdahAA/WoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAAbWoQDF1qEA/9ahAP/WoQD/1qEA/9ahAMXWoQAP1qEAANahAADWoQAA1qEAANahAADWoQAA1qEADtahAMXWoQD/1qEA/9ahAP/WoQD/1qEAxdahAAbWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAYtahAP/WoQD/1qEA/9ahAP/WoQDF1qEADtahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEADtahAMXWoQD/1qEA/9ahAP/WoQD/1qEAY9ahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQBf1qEA/9ahAP/WoQD/1qEAxdahAA7WoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEADtahAMXWoQD/1qEA/9ahAP/WoQBf1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAATWoQCg1qEA6tahAKjWoQAO1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEAANahAADWoQAA1qEADtahAKjWoQDr1qEAoNahAATWoQAA1qEAANahAADWoQAA1qEAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A///////////AAAADgAAAAQAAAAAAAAAAA///wAf//+AP///wD///8A////AP///wDw/w8A8P8PAPD/DwDw/w8A8P8PAPD/DwD///8A////AH///gA///wAAAAAAAAAAAgAAAAcAAAAP8A8A/+AfgH/gP8B/4H/gf+D/8H/////8=">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!--1.页面头部-->
+	<div id="header"></div>
+	<div class="main">
+		<!--2.原始菜单部分-->
+		<div id="primary_menu">
+			<!--左侧导航条-->
+			<div class="nav-menu">
+				<ul class="clear">
+					<li class="nav-item">
+						<a href="index.html"><div class="nav_name">首页</div></a>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>999+</span></div>
+							<div class="nav-name">动画</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>MAD·AMV</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>MMD·3D</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>短片·手书·配音</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>综合</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>152</span></div>
+							<div class="nav-name">番剧</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>连载动画</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>完结动画</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>资讯</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>官方延伸</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>新番时间表</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>番剧索引</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>175</span></div>
+							<div class="nav-name">国创</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>国产动画</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>国产原创相关</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>布袋戏</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>资讯</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>新番时间表</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>国产动画索引</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>999+</span></div>
+							<div class="nav-name">音乐</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>原创音乐</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>翻唱</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>VOCALOID·UTAU</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>演奏</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>三次元音乐</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>OP/ED/OST</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>音乐选集</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>278</span></div>
+							<div class="nav-name">舞蹈</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>宅舞</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>三次元舞蹈</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>舞蹈教程</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>999+</span></div>
+							<div class="nav-name">游戏</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>单机游戏</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>电子竞技</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>手机游戏</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>网络游戏</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>桌游棋牌</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>GMV</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>音游</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>Mugen</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>999+</span></div>
+							<div class="nav-name">科技</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>纪录片</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>趣味科普人文</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>野生技术协会</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>演讲·公开课</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>星海</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>数码</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>机械</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>汽车</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>999+</span></div>
+							<div class="nav-name">生活</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>搞笑</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>日常</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>美食圈</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>动物圈</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>手工</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>绘画</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>ASMR</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>运动</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>154</span></div>
+							<div class="nav-name">鬼畜</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>鬼畜调教</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>音MAD</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>人力VOCALOID</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>教程演示</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>733</span></div>
+							<div class="nav-name">时尚</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>美妆</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>服饰</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>健康</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>资讯</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>134</span></div>
+							<div class="nav-name">广告</div>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>999+</span></div>
+							<div class="nav-name">娱乐</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>综艺</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>明星</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>Korea相关</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:" class="nav-link" data-toggle="dropdown">
+							<div class="nav-num"><span>999+</span></div>
+							<div class="nav-name">影视</div>
+						</a>
+						<ul class="dropdown-menu sub-nav">
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>电影</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+							<li class="sub-nav-item">
+								<a href="javascript:" class="sub-nav-link">
+									<i class="left-arrow"></i>
+									<span>电视剧</span>
+									<i class="right-arrow"></i>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--中间边缘导航-->
+			<div class="side-nav">
+				<ul class="clear">
+					<li class="nav-square side-nav-item">
+						<a href="javascript:" class="side-link">
+							<i class="square-bg"></i><span>广场</span>
+						</a>
+					</li>
+					<li class="nav-live side-nav-item">
+						<a href="javascript:" class="side-link">
+							<i class="live-bg"></i><span>直播</span>
+						</a>
+					</li>
+					<li class="nav-blackhome side-nav-item">
+						<a href="javascript:" class="side-link">
+							<i class="blackhome-bg"></i><span>小黑屋</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--右侧gif图片-->
+			<div class="gif-nav">
+				<a href="javascript:" title="呆毛">
+					<img src="img/index/6e88bc9235e3648a96cd74c28d99491ca0c4b338.gif" alt="">
+				</a>
+			</div>
+		</div>
+		<!--3.首席推荐部分-->
+		<div id="chief_recommend">
+			<!--左侧旋转木马模块-->
+			<div class="carousel-module">
+				<a href="javascript:">更多</a>
+				<!--轮播图片部分-->
+				<ul class="pic clear">
+
+				</ul>
+				<!--图片标题部分-->
+				<ul class="title">
+
+				</ul>
+				<!--导航小圆钮部分-->
+				<ul class="trig">
+
+				</ul>
+			</div>
+			<!--右侧推荐模块-->
+			<div class="recommend-module clear">
+
+			</div>
+		</div>
+		<!--4.推广部分-->
+		<div id="promotion" class="clear">
+			<!--左侧部分-->
+			<div class="l-con left ">
+				<div class="headline clear">
+					<i class="icon promotion-icon left"></i>
+					<span class="name left">推广</span>
+				</div>
+				<div class="storey-box clear"></div>
+			</div>
+			<!--右侧部分-->
+			<div class="r-con right">
+				<div class="online radius">
+					<a href="javascript:" title="在线观看:1552562" class="lightColor">在线人数：1221471</a>
+					<em></em>
+					<a href="javascript:"class="lightColor">最新投稿：15219</a>
+				</div>
+				<div class="img radius">
+					<a href="javascript:">
+						<img src="img/index/chief_recommend.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--------------------楼层起始--------------------->
+		<div id="floor">
+			<!--5.floor1生活-->
+			<div id="life" class="clear">
+				<!--广告部分-->
+				<div class="adv">
+					<a href="javascript:">
+						<img src="img/index/advertisement-life.png" alt="">
+					</a>
+				</div>
+				<!--左侧部分-->
+				<div class="l-con left ">
+					<div class="headline clear">
+						<i class="icon life-icon left"></i>
+						<span class="name left">生活</span>
+						<div class="new left clear b-tab">
+							<div class="item left on">有新动态</div>
+							<div class="item left">最新投稿</div>
+						</div>
+						<a href="javascript:" class="fire left lightColor">
+							<i class="icon"></i>
+							不拖延会死星人的痛
+						</a>
+						<a href="javascript:" class="more right">
+							更多
+							<i class="icon"></i>
+						</a>
+						<div class="read-push right">
+							<i class="icon icon_rotate"></i>
+							<span class="info" ><b>6999</b>条新动态</span>
+						</div>
+					</div>
+					<div class="storey-box clear"></div>
+				</div>
+				<!--右侧排行部分-->
+				<div class="r-con div-rank right">
+
+				</div>
+			</div>
+			<!--6.floor2动画-->
+			<div id="animation">
+				<!--左侧部分-->
+				<div class="l-con left ">
+					<div class="headline clear">
+						<i class="icon animation-icon left"></i>
+						<span class="name left">动画</span>
+						<div class="new left clear b-tab">
+							<div class="item left on">有新动态</div>
+							<div class="item left">最新投稿</div>
+						</div>
+						<a href="javascript:" class="fire left lightColor">
+							<i class="icon"></i>
+							我的十月新番打开方式一定有问题
+						</a>
+						<a href="javascript:" class="more right">
+							更多
+							<i class="icon"></i>
+						</a>
+						<div class="read-push right">
+							<i class="icon icon_rotate"></i>
+							<span class="info" ><b>2406</b>条新动态</span>
+						</div>
+					</div>
+					<div class="storey-box clear"></div>
+				</div>
+				<!--右侧排行部分-->
+				<div class="r-con div-rank right">
+
+				</div>
+			</div>
+			<!--7.floor3番剧-->
+			<div id="bangumi">
+				<!--广告部分-->
+				<div class="adv">
+					<a href="javascript:">
+						<img src="img/index/advertisement-bangumi.jpg" alt="">
+					</a>
+				</div>
+				<!--番剧的上部-->
+				<div class="up clear">
+					<div class="l-con left">
+						<div class="headline clear">
+							<i class="icon bangumi-icon left"></i>
+							<span class="name left">番剧</span>
+							<div class="new left clear b-tab">
+								<div class="item left on">最新</div>
+								<div class="item left "><span>周</span>一</div>
+								<div class="item left "><span>周</span>二</div>
+								<div class="item left "><span>周</span>三</div>
+								<div class="item left "><span>周</span>四</div>
+								<div class="item left "><span>周</span>五</div>
+								<div class="item left "><span>周</span>六</div>
+								<div class="item left "><span>周</span>日</div>
+							</div>
+						</div>
+						<div class="timing-box clear"></div>
+					</div>
+					<div class="r-con div-rank right"></div>
+				</div>
+				<!--番剧的下部-->
+				<div class="l-con left ">
+					<div class="headline clear">
+						<a href="javascript:" class="name left">番剧动态</a>
+						<div class="new left clear b-tab">
+							<div class="item left on">有新动态</div>
+							<div class="item left">最新投稿</div>
+						</div>
+						<a href="javascript:" class="fire left lightColor">
+							<i class="icon"></i>
+							bilibili 秋季新番导视
+						</a>
+						<a href="javascript:" class="more right">
+							更多
+							<i class="icon"></i>
+						</a>
+						<div class="read-push right">
+							<i class="icon icon_rotate"></i>
+							<span class="info" ><b>6530</b>条新动态</span>
+						</div>
+					</div>
+					<div class="storey-box clear"></div>
+				</div>
+				<div class="r-con left">
+					<header><p>特别推荐</p></header>
+					<div class="carousel">
+						<ul class="pic clear">
+							<li class="on left">
+								<a href="javascript:">
+									<div class="lazy-img"><img src="img/bangumi/carousel/1.jpg@260w_268h.webp" alt=""></div>
+								</a>
+							</li>
+							<li class="left">
+								<a href="javascript:">
+									<div class="lazy-img"><img src="img/bangumi/carousel/2.jpg@260w_268h.webp" alt=""></div>
+								</a>
+							</li>
+						</ul>
+						<ul class="title">
+							<a href="javascript:" class="on">这算什么学？</a>
+							<a href="javascript:">末日体验报告</a>
+						</ul>
+						<ul class="trig">
+							<span class="on"></span>
+							<span></span>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--8.floor4音乐-->
+			<div id="music">
+				<!--左侧部分-->
+				<div class="l-con left ">
+					<div class="headline clear">
+						<i class="icon music-icon left"></i>
+						<span class="name left">音乐</span>
+						<div class="new left clear b-tab">
+							<div class="item left on">有新动态</div>
+							<div class="item left">最新投稿</div>
+						</div>
+						<a href="javascript:" class="fire left lightColor">
+							<i class="icon"></i>
+							看完你还觉得了解乐器的音色吗？
+						</a>
+						<a href="javascript:" class="more right">
+							更多
+							<i class="icon"></i>
+						</a>
+						<div class="read-push right">
+							<i class="icon icon_rotate"></i>
+							<span class="info" ><b>3426</b>条新动态</span>
+						</div>
+					</div>
+					<div class="storey-box clear"></div>
+				</div>
+				<!--右侧排行部分-->
+				<div class="r-con div-rank right">
+
+				</div>
+			</div>
+			<!--9.floor5游戏-->
+			<div id="game">
+				<!--左侧部分-->
+				<div class="l-con left ">
+					<div class="headline clear">
+						<i class="icon game-icon left"></i>
+						<span class="name left">游戏</span>
+						<div class="new left clear b-tab">
+							<div class="item left on">有新动态</div>
+							<div class="item left">最新投稿</div>
+						</div>
+						<a href="javascript:" class="fire left lightColor">
+							<i class="icon"></i>
+							《命运2》萌新必看：这些枪一定要有！
+						</a>
+						<a href="javascript:" class="more right">
+							更多
+							<i class="icon"></i>
+						</a>
+						<div class="read-push right">
+							<i class="icon icon_rotate"></i>
+							<span class="info" ><b>15133</b>条新动态</span>
+						</div>
+					</div>
+					<div class="storey-box clear"></div>
+				</div>
+				<!--右侧排行部分-->
+				<div class="r-con div-rank right">
+
+				</div>
+			</div>
+			<!--10.floor6电影-->
+			<div id="movie">
+				<!--左侧部分-->
+				<div class="l-con left ">
+					<div class="headline clear">
+						<i class="icon movie-icon left"></i>
+						<span class="name left">电影</span>
+						<div class="new left clear b-tab">
+							<div class="item left on">有新动态</div>
+							<div class="item left">最新投稿</div>
+						</div>
+						<a href="javascript:" class="fire left lightColor">
+							<i class="icon"></i>
+							《声之形》全网首播
+						</a>
+						<a href="javascript:" class="more right">
+							更多
+							<i class="icon"></i>
+						</a>
+						<div class="read-push right">
+							<i class="icon icon_rotate"></i>
+							<span class="info" ><b>2206</b>条新动态</span>
+						</div>
+					</div>
+					<div class="storey-box clear"></div>
+				</div>
+				<!--右侧排行部分-->
+				<div class="r-con div-rank right">
+
+				</div>
+			</div>
+			<!--11.floor7TV剧-->
+			<div id="TV">
+				<!--左侧部分-->
+				<div class="l-con left ">
+					<div class="headline clear">
+						<i class="icon TV-icon left"></i>
+						<span class="name left">电视剧</span>
+						<div class="new left clear b-tab">
+							<div class="item left on">有新动态</div>
+							<div class="item left">最新投稿</div>
+						</div>
+						<a href="javascript:" class="fire left lightColor">
+							<i class="icon"></i>
+							中国电视剧音乐编年史
+						</a>
+						<a href="javascript:" class="more right">
+							更多
+							<i class="icon"></i>
+						</a>
+						<div class="read-push right">
+							<i class="icon icon_rotate"></i>
+							<span class="info" ><b>3862</b>条新动态</span>
+						</div>
+					</div>
+					<div class="storey-box clear"></div>
+				</div>
+				<!--右侧排行部分-->
+				<div class="r-con div-rank right">
+
+				</div>
+			</div>
+		</div>
+		<!---------------------楼层结束---------------------->
+		<!--12.特别推荐-->
+		<!--<div id="special_recommend">-->
+
+		<!--</div>-->
+	</div>
+	<!--13.页面底部-->
+	<div id="footer"></div>
+	<!--14.楼层滚动部分-->
+	<div id="lift">
+		<div class="nav-list"></div>
+		<div class="s-line"></div>
+		<div class="back-top icon"></div>
+		<div class="phone">
+			<a href="javascript:">
+				<div class="phone-icon"></div>
+				<div class="phone-icon-tips"></div>
+			</a>
+		</div>
+	</div>
+	<!--15.canvas绘图计算小图数量的地方-->
+	<canvas width=0 height=0></canvas>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

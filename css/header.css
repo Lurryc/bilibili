@@ -1,0 +1,160 @@
+/*页面头部整体框架*/
+#header{
+	background:url("../img/head/season.png") no-repeat center center;
+	height:170px;
+	cursor:pointer;
+}
+	/*顶部半透明背景 高42px;*/
+	.z_top{
+		background:rgba(125, 93, 99, 0.4);
+		height:42px;
+		cursor:auto;
+	}
+	/*覆盖在半透明背景上的 第一行导航栏*/
+	.z_header{
+		width:980px;
+		margin:0 auto;
+		line-height:42px;
+	}
+		/*左侧导航栏*/
+		.top_nav{
+			float:left;
+		}
+		.top_nav>ul>li{
+			float:left;
+			transition:.7s;
+		}
+		.top_nav>ul a{
+			padding:0 11px;
+			height:42px;
+			display:block;
+			color:white;
+			transition:.7s;
+		}
+		.top_nav>ul a:hover{
+			background:rgba(255, 255, 255, 0.24);
+		}
+		.top_nav>ul>li:first-child>a{
+			background:url("../img/head/icons.png") no-repeat -854px -74px;
+			padding-left:20px;
+		}
+		.top_nav>ul>li:first-child:hover{
+			background:rgba(255, 255, 255, 0.24);
+		}
+		/*右侧登录注册*/
+		.uns_box>ul{
+			display:flex;
+			justify-content:flex-end;
+			text-align:center;
+		}
+		.uns_box>ul>.login_register{
+			margin:0 10px;
+		}
+		.login_register>a{
+			display:inline-block;
+			color:white;
+			padding:0 10px;
+			transition:.7s;
+		}
+		.login_register>a:hover,.history>a:hover{
+			background:rgba(255, 255, 255, 0.24);
+		}
+		.login_register>i{
+			display: inline-block;
+			height:12px;
+			border-right:1px solid white;
+		}
+		.history>a{
+			display:inline-block;
+			color:white;
+			width:46px;
+			padding:0 11px;
+			transition:.7s;
+		}
+		.uns_box>ul>.post>a{
+			background:linear-gradient(to top,#D5527D 0%,#FE84AC 100%);
+			border-radius:0 0 7px 7px;
+			display:inline-block;
+			color:white;
+			width:58px;
+			height:48px
+		}
+		.uns_box>ul>.post>a:hover{
+			background:linear-gradient(to top,#E4779B 0%,#FE84AC 100%);
+		}
+		/*顶部下半部分*/
+		.main{
+			position:relative;
+		}
+		/*logo图标部分*/
+		.main>div>.logo{
+			position:absolute;
+			width:220px;
+			height:105px;
+			background:url("../img/head/logo.png");
+			top:15px;
+			left:15px;
+			margin:0 auto;
+			transition:.5s;
+		}
+		.main>div>.logo:hover{
+			transform:scale(1.05)
+		}
+		/*搜索框和排名部分*/
+		.ranking>a{
+			display:block;
+			width:68px;
+			height:32px;
+			line-height:32px;
+			background:rgba(255,255,255,.8);
+			border-radius:5px;
+			color:#f25d8e;
+			transition:.5s;
+		}
+		.ranking>a:hover{
+			background:rgba(255,255,255,1);
+		}
+		.ranking>a>span{
+			display:block;
+			padding-left:26px;
+			background:url("../img/head/icons.png")-659px -655px no-repeat;
+		}
+		.ranking{
+			float:left;
+			margin-right:3px;
+		}
+		.ranking_search>.search{
+			float:left;
+			border-radius:4px;
+			background:white;
+			display:flex;
+			background:rgba(255,255,255,.8);
+			transition:.5s;
+		}
+		.ranking_search>.search:hover{
+			background:rgba(255,255,255,1);
+		}
+		.ranking_search>.search>input{
+			height:32px;
+			box-sizing:border-box;
+			border:none;
+			background:transparent;
+			padding:0 10px;
+		}
+		.ranking_search>.search>span{
+			display:inline-block;
+			width:32px;
+			height:32px;
+			background:url("../img/head/icons.png")-653px -720px no-repeat;
+		}
+		.ranking_search>.search>span:hover{
+			background:url("../img/head/icons.png")-718px -720px no-repeat;
+		}
+		.ranking_search{
+			position:absolute;
+			right:0px;
+			bottom:-100px;
+		}
+		
+
+

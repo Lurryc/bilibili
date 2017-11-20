@@ -1,0 +1,70 @@
+.z_header{
+    width:980px;
+    margin:0 auto;
+    line-height:42px;
+}
+/*左侧导航栏*/
+.top_nav{
+    float:left;
+}
+.top_nav>ul>li{
+    float:left;
+    transition:.7s;
+}
+.top_nav>ul a{
+    padding:0 11px;
+    height:42px;
+    display:block;
+    transition:.7s;
+}
+.top_nav>ul a:hover{
+    background:rgba(255, 255, 255, 0.24);
+}
+.top_nav>ul>li:first-child>a{
+    background:url("../img/head/icons.png") no-repeat -919px -74px;
+    padding-left:20px;
+}
+.top_nav>ul>li:first-child:hover{
+    background:rgba(255, 255, 255, 0.24);
+}
+/*右侧登录注册*/
+.uns_box>ul{
+    display:flex;
+    justify-content:flex-end;
+    text-align:center;
+}
+.uns_box>ul>.login_register{
+    width:89px;
+    margin:0 10px;
+}
+.login_register>a{
+    display:inline-block;
+    width:44px;
+    padding:0 10px;
+    transition:.7s;
+}
+.login_register>a:hover,.history>a:hover{
+    background:rgba(255, 255, 255, 0.24);
+}
+.login_register>i{
+    display: inline-block;
+    height:12px;
+    border-right:1px solid #000;
+}
+.history>a{
+    display:inline-block;
+    width:46px;
+    padding:0 11px;
+    transition:.7s;
+}
+.uns_box>ul>.post>a{
+    background:linear-gradient(to top,#D5527D 0%,#FE84AC 100%);
+    border-radius:0 0 7px 7px;
+    display:inline-block;
+    color: #fff;
+    width:58px;
+    height:48px
+}
+.uns_box>ul>.post>a:hover{
+    background:linear-gradient(to top,#E4779B 0%,#FE84AC 100%);
+}
